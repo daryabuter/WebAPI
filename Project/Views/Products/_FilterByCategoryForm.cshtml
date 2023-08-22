@@ -1,0 +1,15 @@
+﻿@model Project.ViewModels.ProductsListViewModel
+
+<h1>Filter by Category</h1>
+
+<form asp-controller="Products" asp-action="FilterByCategory" method="get">
+    <div class="form-group">
+        <label>Filter by Category:</label>
+        <select class="form-control" name="categoryName">
+            <option value="">All</option>
+            <option value="Category1">Еда</option>
+            <option value="Category2">Вода</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Filter</button>
+</form>
